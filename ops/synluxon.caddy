@@ -1,0 +1,19 @@
+# Add this site without changing the existing Music host.
+synluxon.com {
+    root * /var/www/synluxon/current
+    encode zstd gzip
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        X-Frame-Options DENY
+        Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; manifest-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+        Permissions-Policy "camera=(), microphone=(), geolocation=()"
+        Strict-Transport-Security "max-age=86400"
+    }
+    @assets path /assets/*
+    header @assets Cache-Control "public, max-age=86400"
+    @pages not path /assets/*
+    header @pages Cache-Control "no-cache"
+    try_files {path} {path}.html
+    file_server
+}

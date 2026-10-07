@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://synluxon.com/sitemap.xml
