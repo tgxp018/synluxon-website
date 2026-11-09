@@ -22,8 +22,8 @@ Restore only the previous root-domain Caddy behavior using its preserved configu
 
 ## Product destination provenance
 
-Music: `https://t.me/yinyueshebot`, the owner's sealed Music product.
+Music: `https://t.me/SynluxonMusicApp`, the owner's sealed Music product.
 
-Books: `https://t.me/SynluxonBooksbot`, verified via the current Accounting production bot's official Bot API `getMe` on 2026-10-07. Mini App: `https://app.synluxon.com`, verified from its existing non-secret `MINIAPP_BASE_URL` configuration and public HTTPS response. These checks were read-only; no Accounting source/configuration was changed.
+Books: `https://t.me/SynluxonBooksApp`, a public username for the existing Accounting production bot. Mini App: `https://app.synluxon.com`, verified from its existing non-secret `MINIAPP_BASE_URL` configuration and public HTTPS response. These checks were read-only; no Accounting source/configuration was changed.
 
 No unverified contact address or service-matrix destinations are published.
