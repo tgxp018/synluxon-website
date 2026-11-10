@@ -10,7 +10,7 @@ MUSIC_USERNAME = 'SynluxonMusicApp'
 BOOKS_USERNAME = 'SynluxonBooksApp'
 MUSIC = f'https://t.me/{MUSIC_USERNAME}'
 BOOKS = f'https://t.me/{BOOKS_USERNAME}'
-MINIAPP = 'https://app.synluxon.com'
+MINIAPP = 'https://t.me/SynluxonBooksApp/books'
 CHANNEL = 'https://t.me/synluxon'
 UPDATED = '2026-10-07'
 
