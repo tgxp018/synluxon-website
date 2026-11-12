@@ -14,7 +14,7 @@ Deploy ONLY the contents of `public/` to an immutable `/var/www/synluxon/release
 
 Preserve the existing Caddyfile and root behavior before cutover. Add only this root-domain site; preserve the Music host exactly. Validate with `caddy validate`, then gracefully reload Caddy. Confirm valid HTTPS before enabling the included root-only HSTS header. Do not restart product services. Do not add www until it has independently authorized DNS.
 
-Verification covers five pages, robots/sitemap, EN/ZH, mobile/keyboard access, metadata, headers, TLS, the unchanged Music endpoint and unchanged Accounting subdomains.
+Verification covers six pages, robots/sitemap, EN/ZH, mobile/keyboard access, metadata, headers, TLS, the unchanged Music endpoint and unchanged Accounting subdomains.
 
 ## Rollback
 
@@ -27,3 +27,5 @@ Music: `https://t.me/SynluxonMusicApp`, the owner's sealed Music product.
 Books: `https://t.me/SynluxonBooksApp`, a public username for the existing Accounting production bot. Mini App: `https://app.synluxon.com`, verified from its existing non-secret `MINIAPP_BASE_URL` configuration and public HTTPS response. These checks were read-only; no Accounting source/configuration was changed.
 
 No unverified contact address or service-matrix destinations are published.
+
+Clock: `https://t.me/SynluxonClockBot`, the live group attendance bot confirmed by OWNER for WEBSITE-CLOCK-01. Paid licenses are activated manually through the bot's existing private support entry.
